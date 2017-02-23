@@ -1,0 +1,13 @@
+[class*="col-"]{
+  margin-right: 20px;
+}
+
+.top_page{
+  font-size: 20px;
+  background-color: grey;
+}
+
+/*Centrer les images dans le slider*/
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
