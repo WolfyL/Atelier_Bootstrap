@@ -6,3 +6,19 @@
 .carousel-inner > .item > img {
     margin: 0 auto;
 }
+
+body{
+  background-image: url(img/wall.jpg);
+}
+
+p{
+  color: white;
+  float: right;
+  margin-right: 5px;
+}
+
+p2{
+  color: white;
+  float: left;
+  margin-left: 5px;
+}
