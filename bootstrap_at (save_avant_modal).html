@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="bootstrap_at.css">
-    <!-- <link rel="stylesheet" href="jquery.fancybox.css" type="text/css" media="screen" /> -->
+    <link rel="stylesheet" href="jquery.fancybox.css" type="text/css" media="screen" />
 
   </head>
 
@@ -188,36 +188,15 @@
  -->
 
 
-
 <!-- UTILISER LA MODAL DE BOOTSTRAP POUR LE BOUTON DANS LE ZOOM  -->
     <div class="container">
-
-      <!-- <div class = "row">
-        <div  class="col-lg-2 col-md-2 col-sm-5 col-xs-12 thumb">
-          <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="This is my title" data-caption="Some lovely red flowers" data-image="socks1.jpeg" data-target="#image-gallery">
-              <img class="img-responsive" src="socks1.jpeg" alt="Short alt text">
-          </a>
-
-
-        </div> -->
-
+      <div class = "row">
+        <figure>
         <div  class="col-lg-2 col-md-2 col-sm-5 col-xs-12">
+            <a class="fancybox" rel="group" href="socks1.jpeg" title="Chaussettes pokémon 3€ pas cher" ><img src="socks1.jpeg" alt="Pokemon Socks" />blblbl</a>
 
-          <img id="myImg" src="socks1.jpeg" alt="Socks starter pack 20% off" width="300" height="200">
-
-          <div id="myModal" class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-content" id="img01">
-            <button type="button" class="panier btn btn-primary">Add Panier</button>
-            <div id="caption"></div>
-          </div>
-          <script type="text/javascript" src="script_modal.js"></script>
-
+</figure>
         </div>
-
-
-
-
         <!-- <div  class="col-lg-2 col-md-2 col-sm-5 col-xs-12">
           <a class="fancybox" rel="group" href="socks1.jpeg" title="Chaussettes pokémon 3€ pas cher"><img src="socks1.jpeg" alt="Pokemon Socks" /></a>
         </div>
@@ -263,42 +242,21 @@
     </div>
 </div>
 
-<div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="image-gallery-title"></h4>
-            </div>
-            <div class="modal-body">
-                <img id="image-gallery-image" class="img-responsive" src="">
-            </div>
-            <div class="modal-footer">
-
-                <div class="col-md-2">
-                    <button type="button" class="btn btn-primary" id="show-previous-image">Previous</button>
-                </div>
-
-                <div class="col-md-8 text-justify" id="image-gallery-caption">
-                    This text will be overwritten by jQuery
-                </div>
-
-                <div class="col-md-2">
-                    <button type="button" id="show-next-image" class="btn btn-default">Next</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
     <script src="jquery/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="test.js"></script>
+    <script type="text/javascript" src="jquery.fancybox.js"></script>
 
-
-
-
+<!--
+    <script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+</script> -->
+<script type="text/javascript">
+  $('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').focus()
+  });
+</script>
 
 
   </body>
